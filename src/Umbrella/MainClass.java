@@ -10,14 +10,14 @@ class Circle implements MainClass{
 	 @Override
 	 public void draw()
 	 {
-		 System.out.println("a circle drawn");
+		 System.out.println("circle drawn");
 	 }
 }
 class Rectangle implements MainClass{
 	 @Override
 	 public void draw()
 	 {
-		 System.out.println("a rectangle drawn");
+		 System.out.println("rectangle drawn");
 	 }
 }
 class UmbrellaShapeFactory{ 
@@ -36,9 +36,9 @@ class PaintUmbrella{
 	 public static void main(String[] args) throws Exception	 {
 		 
 		 UmbrellaShapeFactory shapeFactory = new UmbrellaShapeFactory();
-		 MainClass circle=shapeFactory.getShape("Circle");
-		 circle.draw();
-		 MainClass rectangle = shapeFactory.getShape("Square");
-		 square.draw();
+		 MainClass cir=shapeFactory.getShape("Circle");
+		 cir.draw();
+		 MainClass rec= shapeFactory.getShape("Square");
+		 rec.draw();
 	 }
 }
